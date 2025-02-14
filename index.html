@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTs Al Khiriyah Darussalam Pipitan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #2c5f2d;
+            --secondary-color: #97bc62;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(rgba(44, 95, 45, 0.8), rgba(151, 188, 98, 0.8)),
+                        url('https://source.unsplash.com/random/1920x1080/?school') center/cover;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        .facility-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .facility-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 50px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 70vh;
+            }
+            
+            .display-4 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #ffffff;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/alumni 2.jpg" alt="Logo" width="50" class="me-2">
+                <span class="fw-bold" style="color: var(--primary-color);">MTs Al Khiriyah Darussalam</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">Fasilitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">Selamat Datang di<br>MTs Al Khiriyah Darussalam Pipitan</h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Membentuk Generasi Berakhlak Mulia, Berprestasi, dan Berwawasan Global</p>
+            <a href="#contact" class="btn btn-lg btn-light px-5 py-3" data-aos="fade-up" data-aos-delay="400">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <h2 class="section-title text-center" data-aos="fade-up">Tentang Sekolah</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <img src="img/fasilitas 1.jpg" alt="About" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-4">MTs Al Khiriyah Darussalam Pipitan</h3>
+                    <p class="text-muted" style="text-align: justify;">MTs Al Khiriyah Darussalam Pipitan adalah lembaga pendidikan Islam yang berkomitmen untuk memberikan pendidikan berkualitas dengan mengintegrasikan nilai-nilai keislaman, ilmu pengetahuan, dan teknologi. Kami memiliki tenaga pendidik profesional dan fasilitas lengkap untuk mendukung proses pembelajaran.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i>Akreditasi A</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i>Kurikulum Terpadu</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i>Ekstrakurikuler Lengkap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="section-title text-center" data-aos="fade-up">Fasilitas Sekolah</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card facility-card h-100">
+                        <img src="img/fasilitas 1.jpg" class="card-img-top" alt="Lab Komputer">
+                        <div class="card-body">
+                            <h5 class="card-title">Lab Komputer</h5>
+                            <p class="card-text">Laboratorium komputer modern dengan perangkat terbaru dan koneksi internet cepat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card facility-card h-100">
+                        <img src="img/fasilitas 2.jpg" class="card-img-top" alt="Lapangan">
+                        <div class="card-body">
+                            <h5 class="card-title">Lapangan</h5>
+                            <p class="card-text">Lapangan olahraga yang luas untuk berbagai kegiatan ekstrakurikuler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card facility-card h-100">
+                        <img src="img/fasilitas 3.jpg" class="card-img-top" alt="Perpustakaan">
+                        <div class="card-body">
+                            <h5 class="card-title">Perpustakaan</h5>
+                            <p class="card-text">Perpustakaan dengan koleksi buku yang lengkap dan nyaman untuk belajar.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan fasilitas lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Penerimaan Siswa Baru Section -->
+    <section id="admissions" class="py-5">
+        <div class="container py-5 text-center">
+            <h2 class="section-title" data-aos="fade-up">Penerimaan Siswa Baru</h2>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Bergabunglah dengan kami dan jadilah bagian dari MTs Al Khiriyah Darussalam Pipitan!</p>
+            <a href="beda 1.html" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="400">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Apa Kata Alumni Section -->
+    <section id="alumni-testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Apa Kata Alumni</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card text-center shadow-lg border-0" style="border-radius: 15px;">
+                        <img src="img/alumni 1.jpg" class="card-img-top rounded-circle" alt="Alumni 1" style="width: 100px; height: 100px; margin: auto; margin-top: 20px;">
+                        <div class="card-body">
+                            <p class="card-text" style="font-style: italic; color: #555;">"MTs Al Khiriyah Darussalam telah membentuk saya menjadi pribadi yang lebih baik dan siap menghadapi tantangan di masa depan."</p>
+                            <h5 class="card-title">M Mujahadah Alfarebzi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card text-center shadow-lg border-0" style="border-radius: 15px;">
+                        <img src="alumni2.jpg" class="card-img-top rounded-circle" alt="Alumni 2" style="width: 100px; height: 100px; margin: auto; margin-top: 20px;">
+                        <div class="card-body">
+                            <p class="card-text" style="font-style: italic; color: #555;">"Pengalaman belajar di sini sangat berharga. Saya mendapatkan banyak ilmu dan teman yang luar biasa."</p>
+                            <h5 class="card-title">Anggia Susanti</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card text-center shadow-lg border-0" style="border-radius: 15px;">
+                        <img src="alumni3.jpg" class="card-img-top rounded-circle" alt="Alumni 3" style="width: 100px; height: 100px; margin: auto; margin-top: 20px;">
+                        <div class="card-body">
+                            <p class="card-text" style="font-style: italic; color: #555;">"Saya sangat bersyukur bisa belajar di MTs Al Khiriyah Darussalam. Banyak pelajaran hidup yang saya dapatkan."</p>
+                            <h5 class="card-title">Muhamad Ansori</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <h2 class="section-title text-center" data-aos="fade-up">Hubungi Kami</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="mb-4">
+                        <h4>Lokasi Kami</h4>
+                        <iframe src="https://maps.google.com/maps?q=...&output=embed" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Alamat Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Pesan"></textarea>
+                        </div>
+                        <button class="btn btn-primary w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>MTs Al Khiriyah Darussalam</h5>
+                    <p>Jl. Pendidikan No. 123 Pipitan<br>Telp: (021) 12345678<br>Email: info@mtsalkhiriyah.sch.id</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white text-decoration-none">Tentang</a></li>
+                        <li><a href="#facilities" class="text-white text-decoration-none">Fasilitas</a></li>
+                        <li><a href="#gallery" class="text-white text-decoration-none">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sosial Media</h5>
+                    <div class="social-media">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2023 MTs Al Khiriyah Darussalam Pipitan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                document.querySelector('.navbar').style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
